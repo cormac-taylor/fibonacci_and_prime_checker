@@ -8,5 +8,8 @@
   },
   "author": "Cormac Taylor 20014003",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }

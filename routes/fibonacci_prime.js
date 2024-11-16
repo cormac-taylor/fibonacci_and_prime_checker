@@ -1,7 +1,10 @@
-/*
-Require express and express router as shown in lecture code and worked in previous labs.
+import { Router } from "express";
+import path from 'path';
 
-Your server this week should not do any of the processing or calculations.  Your server only exists to allow someone to get to the HTML Page and download the associated assets to run the Fibonacci & prime number checking page.
+const router = Router();
 
-you just need one route to send the static homepage.html file
-*/
+router.get("/", (_, res) => {
+  res.sendFile(path.resolve('static/homepage.html'));
+});
+
+export default router;
